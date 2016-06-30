@@ -23,9 +23,15 @@ public class EmojiAdapter extends BaseAdapter {
     public EmojiAdapter(Context context, List<Emoji> picturesList, int layout) {
         this.context = context;
         this.picturesList = picturesList;
+        /*
+        for(Emoji emoji : picturesList){
+            pi
+        }
         for(int i = picturesList.size(); i<48; i++){
             picturesList.add(new Emoji(R.drawable.ic_faces_selected,R.drawable.ic_faces_selected,":soon:",EmojiHelper.FACES));
         }
+        */
+        this.picturesList = picturesList;
         this.layout = layout;
         this.inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -54,7 +60,7 @@ public class EmojiAdapter extends BaseAdapter {
             holder = (GridViewHolder) convertView.getTag();
         }
 
-        holder.emoji.setImageResource(picturesList.get(position).id);
+        holder.emoji.setImageResource(picturesList.get(position).resource);
 
         return convertView;
     }
@@ -64,7 +70,7 @@ public class EmojiAdapter extends BaseAdapter {
         ImageView emoji;
 
         public GridViewHolder(View view){
-            view.findViewById(R.id.emoji);
+            emoji = (ImageView)view.findViewById(R.id.emoji);
         }
     }
 
