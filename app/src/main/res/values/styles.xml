@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EmojiWidgetTopButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EmojiWidgetTextButton" parent="EmojiWidgetTopButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dip</item>
+    </style>
+
+    <style name="EmojiWidgetDeleteButton" parent="EmojiWidgetTopButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_width">24dip</item>
+        <item name="android:layout_height">24dip</item>
+    </style>
+
+    <style name="EmojiWidgetTabBar">
+        <item name="android:gravity">center</item>
+        <!--<item name="android:background">@drawable/emoji_widget_background</item>-->
+        <item name="android:paddingLeft">2dip</item>
+        <item name="android:paddingRight">2dip</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+</resources>
