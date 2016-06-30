@@ -10,10 +10,7 @@
 
     <style name="EmojiWidgetTopButton">
         <item name="android:background">@android:color/transparent</item>
-        <item name="android:layout_marginTop">8dip</item>
-        <item name="android:layout_marginBottom">8dip</item>
-        <item name="android:layout_marginLeft">8dip</item>
-        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:layout_margin">8dip</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>

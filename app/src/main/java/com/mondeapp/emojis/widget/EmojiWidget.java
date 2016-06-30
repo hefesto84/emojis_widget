@@ -143,8 +143,6 @@ public class EmojiWidget extends LinearLayout implements ViewPager.OnPageChangeL
 
         mScroll.smoothScrollTo(w*position,0);
 
-
-        //Log.d("EmojiWidget","L: "+mContainer.getWidth() + "|" + w);
     }
 
     @Override

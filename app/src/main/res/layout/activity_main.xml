@@ -27,9 +27,12 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:background="#e1e1e1"
+                    android:layout_width="48dip"
                     android:layout_height="wrap_content"
-                    android:layout_margin="0dp"
+                    android:layout_marginLeft="0dip"
+                    android:layout_marginTop="1dip"
+                    android:layout_marginBottom="1dip"
                     android:gravity="center">
 
                     <ImageView
@@ -46,19 +49,21 @@
                     android:layout_weight="50"
                     android:background="@android:color/transparent"
                     android:fadeScrollbars="false"
+
                     android:gravity="center"
                     android:layout_marginRight="6dip"
-                    android:layout_marginLeft="6dip"
                     android:scrollbars="none">
 
                     <LinearLayout
                         android:id="@+id/emoji_widget_topbar_container"
+                        android:padding="2dip"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="left"
                         android:gravity="center">
 
                         <LinearLayout
+
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
